@@ -1,0 +1,117 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+header{
+    background-color: white;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.section-title{
+    background-image: url(../img/design1_image1.jpg);
+    height: 35vh;
+    font-size: 4rem;
+    display: flex;
+    background-size: 5rem;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-subtitle{
+    background-color: black;
+    color: white;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    height: 6em;
+    position: absolute;
+    left:2%;
+    top:2%;
+    background-color: white;
+    border: 0.3rem solid black;
+    border-radius: 1rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evanly;
+    align-items: center;
+}
+
+.section-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav{
+    flex:15%;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+}
+
+li{
+    background-color: blue;
+    border: 0.1rem solid black;
+    box-shadow: 0.2rem 0.2rem black;
+    padding: 0.8rem 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-nav{
+    text-decoration: none;
+    color: white;
+}
+
+.div-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+p{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+span{
+    text-indent: 1rem;
+}
+
+li:hover{
+    background-color: green;
+}
+
+li:focus-within{
+    background-color: green;
+}
