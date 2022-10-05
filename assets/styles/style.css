@@ -1,0 +1,727 @@
+/*Variables - Paleta Cromática*/
+
+:root {
+    --yellow: #F3B200;
+    --gray: #161615;
+}
+
+/*Estilo Global*/
+
+*:not(dd) {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+} 
+
+/*HEADER*/
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem;
+    background: var(--gray);
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    width: 184px;
+}
+
+nav {
+    width: 100%;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.menuitems {
+    display: flex;
+    color: white;
+    font-size: 15px;
+    margin: 20px;
+    padding: 5px 0;
+    font-weight: var(--light);
+}
+
+/*Efectos nav*/
+
+nav a {
+    background-image: linear-gradient(
+        to right,
+        #F3B200,
+        #F3B200 50%,
+        white 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    position: relative;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+    
+nav a:before{
+    content: '';
+    background: #F3B200;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+    
+nav a:hover {
+    background-position: 0;
+}
+    
+nav a:hover::before{
+    width: 100%;
+}
+
+/*MAIN*/
+
+.hero {
+    display: flex;
+}
+
+.foto-hero{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.foto-hero img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.info-hero {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    /* margin-left: 5%; */
+}
+
+.info-hero h1 {
+    display: flex;
+    font-size: 6.5rem;
+    color: white;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+}
+
+.info-hero h2 {
+    display: flex;
+    font-size: 6.5rem;
+    color: var(--yellow);
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+}
+
+.button-hero {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    /* height: 100%;
+    width: 100%; */
+}
+
+.game {
+    font-size: 18px;
+    color: white;
+    border: 3px solid white;
+    margin-top: 10%;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 25px 25px;
+    border-radius: 25px;
+}
+
+.game:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.rules {
+    font-size: 18px;
+    color: black;
+    margin-top: 10%;
+    background-color: white;
+    border: 3px solid white;
+    text-decoration: none;
+    padding: 25px 25px;
+    border-radius: 25px;
+}
+
+.rules:hover {
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.game-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    gap: 3rem;
+}
+
+table {
+    width: 80%;
+    border: var(--yellow) solid 0.1rem;
+}
+
+thead th:nth-child(1) {
+    width: 25%;
+}
+
+thead th:nth-child(2) {
+    width: 25%;
+}
+
+thead th:nth-child(3) {
+    width: 25%;
+}
+
+thead th:nth-child(4) {
+    width: 25%;
+}
+
+th {
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--yellow);
+    font-size: 20px;
+}
+
+td {
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.ubications {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.ubications h2 {
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--yellow);
+    margin-bottom: 2rem;
+}
+
+.card-map-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+    margin-bottom: 2rem;
+}
+
+.card-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 2% 0;
+    padding: 1rem; */
+}
+
+.card-map h4 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin: 5%;
+    color: var(--yellow);
+    /* height: 10 vh; */
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.description h2 {
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--yellow);
+    margin-bottom: 2rem;
+
+}
+
+.description p {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2em;
+    color: white;
+    margin-bottom: 3%;
+}
+
+.description__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    /* padding: 5% 0; */
+}
+
+.description__section h2 {
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--yellow);
+    margin-bottom: 2rem;
+}
+
+.main-rules {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    padding: 5rem;
+    margin: 3rem 3rem 5rem 3rem;
+    border: 0.1rem solid var(--yellow);
+    width: 60%;
+}
+
+.list dl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.h4-one {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--yellow);
+    margin-bottom: 2rem;
+}
+
+.dd-one {
+    text-align: justify;
+    text-indent: 2rem;
+    margin-bottom: 1rem;
+}
+
+.h4-two {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--yellow);
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.dd-two ol{
+    display: flex;
+    flex-direction: column;
+    /* list-style-position: inside; */
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.dd-two h4 {
+    margin-bottom: 1rem;
+    color: var(--yellow);
+}
+
+.dd-two li::marker {
+    color: var(--yellow);
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+.dd-two p {
+    text-align: justify;
+}
+
+.h4-three {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--yellow);
+    margin-bottom: 2rem;
+}
+
+.list-fields{
+    list-style-type: lower-latin;
+    padding-left: 2rem;
+}
+
+.dd-three p {
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.dd-three ul {
+    text-align: justify;
+    padding-left: 2rem;
+}
+
+.dd-three li::marker {
+    color: var(--yellow);
+}
+
+.list dt {
+    color: white;
+}
+
+.list dl {
+    color: white;
+}
+
+.list dd {
+    color: white;
+}
+
+.card__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+}
+
+.grow {
+    width: 30%;
+    height: 10vh;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2% 0;
+    padding: 1rem;
+}
+
+.card h4 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 4%;
+    color: var(--yellow);
+    height: 10 vh;
+}
+
+.index-p {
+    max-width: 290px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.2em;
+    color: white;
+    margin-bottom: 6%;
+}
+
+.about-p {
+    max-width: 290px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.2em;
+    color: white;
+    height: 25vh;
+    margin-bottom: 6%;
+}
+
+.contact-p {
+    max-width: 290px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.2em;
+    color: white;
+    margin: 6% 0;
+}
+
+.contact-p a {
+    color: var(--yellow);
+}
+
+.description-section-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    padding: 3% 0;
+}
+
+.description-section-bottom span{
+    color: var(--yellow);
+}
+
+.description-section-bottom a{
+    text-decoration: none;
+    color: white;
+}
+
+.description-section-bottom a:hover{
+    text-decoration: none;
+    color: blue;
+}
+
+.bottom-table-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.bottom-table-p {
+    width: 60%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.2em;
+    color: white;
+    margin: 1% 0;
+}
+
+.game-p {
+    max-width: 290px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.2em;
+    color: white;
+    margin-bottom: 3%;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    padding: 1rem;
+    margin: 1rem 0 3rem 0;
+    border: 0.1rem solid var(--yellow);
+    /* border-radius: 2rem; */
+    width: 70%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    color: white;
+}
+
+input::placeholder{
+    color: grey;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+input::placeholder:hover{
+    color: white;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+input:not([type="date"],[type="submit"]){
+    padding: 0.3rem;
+    background-color: rgb(32, 23, 23);
+    color: white;
+}
+
+input:hover:not([type="date"],[type="submit"]) {
+    padding: 0.3rem;
+    background-color: white;
+    color: black;
+}
+
+input[type="date"] {
+    padding: 0.5rem;
+
+}
+
+.box {
+    border: 3px solid var(--yellow);
+}
+
+form h4 {
+    color: var(--yellow);
+}
+
+form p {
+    text-align: justify;
+}
+
+.form__container {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+    align-items: center;
+}
+
+.form__container2 {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+    align-items: center;
+}
+
+.permission {
+    color: var(--yellow);
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+label {
+    padding: 0.2rem;
+}
+
+.fieldset1 {
+    width: 40%;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 0.1rem solid var(--yellow);
+    text-align: center;
+}
+
+.fieldset2 {
+    width: 60%;
+    padding: 1rem;
+    /* margin-top: 1rem; */
+    border: 0.1rem solid var(--yellow);
+    text-align: center;
+}
+
+.fieldset3 {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 0.1rem solid var(--yellow);
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.fieldset4 {
+    width: 70%;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 0.1rem solid var(--yellow);
+    text-align: center;
+}
+
+.fieldset5 {
+    width: 50%;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 0.1rem solid var(--yellow);
+    text-align: center;
+}
+
+.btn__submit {
+    color: black;
+    width: 20%;
+    margin: 2rem 0 1rem 0;
+    padding: 1rem;
+    background-color: var(--yellow);
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.btn__submit:hover {
+    color: black;
+    width: 20%;
+    margin: 2rem 0 1rem 0;
+    padding: 1rem;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+iframe{
+    width:350px;
+    height:350px;
+    border-radius: 5%;
+}
+
+/*FOOTER*/
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: var(--gray);
+}
+
+.copyright {
+    color: white;
+    font-weight: 200;
+    font-size: 13px;
+}

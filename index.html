@@ -2,52 +2,67 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets\imgs\FavIcon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/styles/style.css">
     <title>Mighty Ducks Hockey League</title>
-
-    <!-- <link rel="stylesheet" href="./assets/styles/style1.css" /> -->
-    <!-- <link rel="stylesheet" href="./assets/styles/style2.css" /> -->
-    <link rel="stylesheet" href="./assets/styles/style3.css" />
 </head>
 
 <body>
     <header>
-        <section class="section-title">
-            <h1>Mighty Ducks Hockey League</h1>
-        </section>
-        <section class="section-subtitle">
-            <h2>Upcoming Events</h2>
-        </section>
-    </header>
-    <main>
-        <div class="div-img">
-            <img class="logo" src="./assets/img/logo.png" alt="logo" />
-        </div>
+        <img class="logo" src="assets\imgs\logo-header.png" alt="">
         <nav>
-            <ul>
-                <li><a class="a-nav" href="#">Home</a></li>
-                <li><a class="a-nav" href="./about.html">About MDHL</a></li>
-                <li><a class="a-nav" href="./contact.html">Contact</a></li>
+            <ul class="menu-container">
+                <li><a class="menuitems" href="#">Home</a></li>
+                <li><a class="menuitems" href="./about.html">About</a></li>
+                <li><a class="menuitems" href="./contact.html">Contact</a></li>
+                <li><a class="menuitems" href="./form.html">Registration</a></li>
             </ul>
         </nav>
-        <section class="section-main">
-            <div class="div-section">
-                <p>August 4</p>
-                <span>MDHL Fundraiser</span>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="foto-hero">
+                <img src="assets\imgs\Foto-Hero-Section.png" alt="Boy playing hockey">
             </div>
-            <div class="div-section">
-                <p>August 16</p>
-                <span>Season Kick·off: Meet the Tearns</span>
+            <div class="info-hero">
+                <h1>Mighty Ducks</h1>
+                <h2>Hockey League</h2>
+                <div class="button-hero">
+                    <a class="game" href="./game.html">Game Schedule</a>
+                    <a class="rules" href="./rules.html">Rules & Policies</a>
+                </div>
             </div>
-            <div class="div-section">
-                <p>September 1</p>
-                <span>First Game of the Season (Check Game Schedule for details)</span>
+        </section>
+        <section class="description__section" id="description">
+            <h2>Upcoming Events</h2>
+            <div class="card__container">
+                <div class="card">
+                    <img class="grow" src="./assets/imgs/location-icon-03.svg" alt="Branding icon" class="info-card" />
+                    <h4>August 4</h4>
+                    <p class="index-p">Season Kick·off: Meet the Tearns</p>
+                </div>
+                <div class="card">
+                    <img class="grow" src="./assets/imgs/location-icon-03.svg" alt="Editorial icon" class="info-card" />
+                    <h4>August 16</h4>
+                    <p class="index-p">Season Kick·off: Meet the Tearns</p>
+                </div>
+                <div class="card">
+                    <img class="grow" src="./assets/imgs/location-icon-03.svg" alt="Editorial icon" class="info-card" />
+                    <h4>September 1</h4>
+                    <p class="index-p">First Game of the Season (Check Game Schedule for details)</p>
+                </div>
             </div>
         </section>
     </main>
 </body>
+
+<footer>
+    <div class="copyright">
+        <h4 class="copyright">Copyright © Juan Ezequiel Gómez 2022 - All rights reserved</h4>
+    </div>
+</footer>
 
 </html>
